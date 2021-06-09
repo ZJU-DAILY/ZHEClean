@@ -1,0 +1,54 @@
+[
+  {
+    "name": "FB15K-237",
+    "data_path": "./dataset/FB15K-237",
+    "batch_size": 512,
+    "negative_sample_size": 512,
+    "hidden_dim": 500,
+    "lr": 0.00005,
+    "gamma": 9.0,
+    "adversarial_temperature": 1.0,
+    "max_steps": 120000,
+    "update_steps": 100000,
+    "ssvae_steps": 1000
+  },
+  {
+    "name": "WN18RR",
+    "data_path": "./dataset/WN18RR",
+    "batch_size": 512,
+    "negative_sample_size": 512,
+    "hidden_dim": 500,
+    "lr": 0.00005,
+    "gamma": 9.0,
+    "adversarial_temperature": 1.0,
+    "max_steps": 120000,
+    "update_steps": 100000,
+    "ssvae_steps": 1000
+  },
+  {
+    "name": "YAGO3-10-DR",
+    "data_path": "./dataset/YAGO3-10-DR",
+    "batch_size": 512,
+    "negative_sample_size": 512,
+    "hidden_dim": 500,
+    "lr": 0.00005,
+    "gamma": 9.0,
+    "adversarial_temperature": 1.0,
+    "max_steps": 120000,
+    "update_steps": 100000,
+    "ssvae_steps": 1000
+  },
+  {
+    "name": "NELL27K",
+    "data_path": "./dataset/NELL27K",
+    "batch_size": 512,
+    "negative_sample_size": 512,
+    "hidden_dim": 500,
+    "lr": 0.00005,
+    "gamma": 9.0,
+    "adversarial_temperature": 1.0,
+    "max_steps": 120000,
+    "update_steps": 100000,
+    "ssvae_steps": 1000
+  }
+]
