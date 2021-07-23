@@ -1,10 +1,10 @@
-# An Embedding Powered Knowledge Graph Cleaning Framework
+# ZHEClean: Cleaning Dirty Knowledge Graphs using Zero Human-labeled Examples
 
-KGClean, a novel cleaning framework powered by knowledge graph embedding, to not only detect but also repair dirty triples in knowledge graphs.
-First, KGClean presents TransVAE, which is designed to collaboratively learn a trust-aware knowledge representation (TKR) model and a self-supervised triple classification (STC) model directly from a real-world knowledge graph that might contain errors. TransVAE does not require any labor-intensive label annotations. In addition, it guarantees the excellent performance of the knowledge representation model as well as that of the triple classification model via jointly training the two models in an iterative manner. 
-Next, KGClean utilizes a propagation power-based PROR strategy to repair errors. 
+ZHEClean, a novel cleaning framework powered by knowledge graph embedding, to not only detect but also repair dirty triples in knowledge graphs.
+First, ZHEClean presents TransVAE, which is designed to collaboratively learn a trust-aware knowledge representation (TKR) model and a self-supervised triple classification (STC) model directly from a real-world knowledge graph that might contain errors. TransVAE does not require any labor-intensive label annotations. In addition, it guarantees the excellent performance of the knowledge representation model as well as that of the triple classification model via jointly training the two models in an iterative manner. 
+Next, ZHEClean utilizes a propagation power-based PROR strategy to repair errors. 
 
-For more technical details, see the An Embedding Powered Knowledge Graph Cleaning Framework paper.
+For more technical details, see the ZHEClean: Cleaning Dirty Knowledge Graphs using Zero Human-labeled Examples paper.
 
 ![framework](framework.jpg)
 
@@ -53,13 +53,13 @@ python run.py --noise_rate 20 --mode soft --data_name FB15K-237 --model RotatE
 
 To run the error repairing with KGClean:
 
-**KGClean-E**
+**ZHEClean-E**
 
 ```
 python erpair_error.py --data_name FB15K-237 --model TransE
 ```
 
-**KGClean-R**
+**ZHEClean-R**
 
 ```
 python erpair_error.py --data_name FB15K-237 --model RotatE
